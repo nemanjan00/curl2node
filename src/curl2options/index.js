@@ -21,11 +21,12 @@ module.exports = (argv) => {
 		delete argv.header;
 	}
 
-	if(argv.dataBinary) {
-		options.body = argv.dataBinary;
+	if(argv.dataBinary || argv.data) {
+		options.body = argv.dataBinary || argv.data;
 
 		delete argv["data-binary"];
 		delete argv.dataBinary;
+		delete argv.data;
 	}
 
 	const urls = argv._.filter(url => {
