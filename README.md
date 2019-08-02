@@ -30,6 +30,22 @@ If you would like to test if it will work first, feel free to use `runner` inste
 curl2node runner curl https://google.com 
 ```
 
+Generated code will look something like this: 
+
+```javascript
+const got = require("got");
+
+const options = {
+	"url": "https://google.com"
+};
+
+got(options).then((data) => {
+	console.log(data);
+}).catch((error) => {
+	console.error(error);
+});
+```
+
 ## Author
 
 * [nemanjan00](https://github.com/nemanjan00)
