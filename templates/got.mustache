@@ -1,0 +1,10 @@
+const got = require("got");
+
+const options = {{{options}}};
+
+got(options).then((data) => {
+	console.log(data);
+}).catch((error) => {
+	console.error(error);
+});
+
