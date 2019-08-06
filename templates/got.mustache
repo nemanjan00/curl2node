@@ -3,7 +3,9 @@ const got = require("got");
 const options = {{{options}}};
 
 got(options).then((data) => {
-	console.log(data);
+	console.log(data.statusCode);
+	console.log(data.headers);
+	console.log(data.body);
 }).catch((error) => {
 	console.error(error);
 });

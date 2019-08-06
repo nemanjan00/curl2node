@@ -16,7 +16,8 @@
   "dependencies": {
     "got": "^9.6.0",
     "mustache": "^3.0.1",
-    "validator": "^11.1.0"
+    "validator": "^11.1.0",
+    "yargs": "^13.3.0"
   },
   "husky": {
     "hooks": {
