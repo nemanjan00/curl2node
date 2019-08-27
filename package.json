@@ -1,6 +1,6 @@
 {
   "name": "curl2node",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "curl2node converts CLI curl command to Node.JS code. ",
   "main": "index.js",
   "repository": "git@github.com:nemanjan00/curl2node.git",
